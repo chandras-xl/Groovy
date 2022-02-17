@@ -6,7 +6,7 @@ class AreaOfCircle{
     }
     static void main(String[] args){
         float pi = 3.14
-        float r = 23.45f
+        float r = 23.45
         AreaOfCircle area = new AreaOfCircle()
         println("The area of a circle is: "+area.getArea(pi,r))
     }
