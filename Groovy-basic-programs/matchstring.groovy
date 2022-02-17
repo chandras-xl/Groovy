@@ -7,7 +7,7 @@ class CheckString{
         lst = str.split(' ')
         for(item in lst){
             if(item == wrd){
-                println("Match found for word $wrd")
+                return true
             }
         }
     }
@@ -15,6 +15,11 @@ class CheckString{
         String str = "Hello welcome to groovy programming" 
         String wrd = "groovy"
         CheckString cs = new CheckString()
-        cs.stringCheck(str,wrd)
+        Boolean chk_bool = cs.stringCheck(str,wrd)
+        if(!chk_bool){
+            println("Match not found for the word $wrd")
+        }else{
+            println("Match found for the word $wrd")
+        }
     }
 }
