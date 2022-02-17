@@ -25,7 +25,7 @@ class Fibonacci{
 
 
     static void main(String[] args){
-        def nterm = 7
+        def nterm = 6
         Fibonacci fibo = new Fibonacci()
         fibo.printSeries(nterm)
     }
